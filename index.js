@@ -4,6 +4,8 @@
 const capitalizeFirstLetter = require("./utils/capitalize-firstletter");
 const extendSchema = require("./utils/extend-schema");
 const getEnumValue = require("./utils/get-enum-values");
+const normalizeActionName = require('./utils/normalize-action-name');
+const findErrorClassByMessage = require('./utils/find-error-class-by-message')
 
 /**
  * exports
@@ -17,3 +19,9 @@ exports.extendSchema = extendSchema;
 
 // get given enum values as array
 exports.getEnumValue = getEnumValue;
+
+// normalise action querry param from dash separated form to camel case
+exports.normalizeActionName = normalizeActionName;
+
+// find zoro error class by error message
+exports.findErrorClassByMessage = findErrorClassByMessage;

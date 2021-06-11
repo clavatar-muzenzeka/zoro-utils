@@ -10,4 +10,4 @@ function getEnumValue(complexEnum) {
 }
 
 // export
-exports = getEnumValue;
+module.exports = getEnumValue;

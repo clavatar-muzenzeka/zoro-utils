@@ -8,4 +8,4 @@ function capitalizeFirstLetter(lowerCaseString) {
 }
 
 // export
-exports = capitalizeFirstLetter;
+module.exports = capitalizeFirstLetter;

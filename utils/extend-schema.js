@@ -4,7 +4,7 @@
  * @param {mongoose.Schema} definition new schema definition
  * @returns {mongoose.Schema} extended schema
  */
-function extendSchema(Schema, definition) {
+const extendSchema = (Schema, definition) => {
   // copy complex objects
   definition.obj = {
     ...definition.obj,
@@ -16,7 +16,7 @@ function extendSchema(Schema, definition) {
     ...Schema.paths,
   };
   return definition;
-}
+};
 
 // export
-exports = extendSchema;
+module.exports = extendSchema;
