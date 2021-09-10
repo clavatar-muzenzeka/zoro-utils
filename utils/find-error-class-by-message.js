@@ -8,10 +8,10 @@ const ErrorResponse = require("../../zoro-errors-glossary/error-response.class")
 module.exports = (errorsGlossary, errorMessage) => {
   let found = null;
   Object.keys(errorsGlossary).forEach((key, index) => {
-    if(errorsGlossary[key].message === errorMessage) {
+    if (errorsGlossary[key].message === errorMessage) {
       found = errorsGlossary[key];
       return;
     }
   });
-  return found
+  return found;
 };
